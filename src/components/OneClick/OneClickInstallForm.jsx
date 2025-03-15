@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Button, Container, Paper, TextField, Typography } from "@mui/material";
-import OneClickInstallButton from "./OnclickInstallButton";
 
 
 const OneClickInstallForm = () => {
@@ -11,7 +10,6 @@ const OneClickInstallForm = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        // minHeight: "100vh",
       }}
     >
       <Container maxWidth="sm">
@@ -63,7 +61,7 @@ const OneClickInstallForm = () => {
               textAlign: "right",
               color: "#12CA95",
               fontFamily: "Poppins",
-              fontSize: "14px",
+              fontSize: "15px",
               fontStyle: "italic",
               fontWeight: 400,
               textDecoration: "none",
@@ -73,7 +71,6 @@ const OneClickInstallForm = () => {
           >
             Browse
           </Typography>
-          <OneClickInstallButton />
         </Paper>
       </Container>
     </Box>

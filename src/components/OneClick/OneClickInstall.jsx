@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Button, Container, Paper, Typography } from "@mui/material";
+import { Box, Container, Paper } from "@mui/material";
 import OneClickInstallForm from "./OneClickInstallForm";
+import OneClickInstallButton from "./OnclickInstallButton";
 
 const OneClickInstall = () => {
   return (
@@ -16,10 +17,32 @@ const OneClickInstall = () => {
         backgroundPosition: "center",
       }}
     >
-      <Container maxWidth="sm">
-        <Paper elevation={0} sx={{ p: 4, textAlign: "center", borderRadius: 10 }}>
+      <Container 
+        maxWidth="sm" 
+        sx={{ position: "relative" }} // Make the container a relative parent
+      >
+        <Paper 
+          elevation={0} 
+          sx={{ 
+            p: 4, 
+            textAlign: "center", 
+            borderRadius: 10, 
+            position: "relative"
+          }}
+        >
           <OneClickInstallForm />
         </Paper>
+
+        {/* Floating button positioned at bottom-right of the container */}
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: -40, // Adjust as needed to overlap container
+            right: -40,  // Adjust as needed to place at bottom-right edge
+          }}
+        >
+          <OneClickInstallButton />
+        </Box>
       </Container>
     </Box>
   );
