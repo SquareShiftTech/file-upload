@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Button, Container, Paper, TextField, Typography } from "@mui/material";
+import OneClickInstallButton from "./OnclickInstallButton";
+
 
 const OneClickInstallForm = () => {
   return (
@@ -71,13 +73,7 @@ const OneClickInstallForm = () => {
           >
             Browse
           </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{ mt: 2, borderRadius: 4 }}
-          >
-            Install Now
-          </Button>
+          <OneClickInstallButton />
         </Paper>
       </Container>
     </Box>
