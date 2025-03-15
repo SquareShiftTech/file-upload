@@ -1,6 +1,16 @@
 import React from "react";
-import { Box, Button, Container, Paper, TextField, Typography } from "@mui/material";
+import { Box, Container, Paper, TextField, Typography } from "@mui/material";
 
+// Reusable method for label styles
+const getLabelStyles = () => ({
+  color: '#808199', // Label color
+  fontFamily: 'Poppins', // Font family
+  fontSize: '14px', // Font size
+  fontStyle: 'normal', // Font style
+  fontWeight: 400, // Font weight
+  lineHeight: 'normal', // Line height
+  textAlign: 'center', // Ensure text is horizontally centered
+});
 
 const OneClickInstallForm = () => {
   return (
@@ -25,13 +35,13 @@ const OneClickInstallForm = () => {
             fullWidth
             label="Enter Project ID"
             variant="outlined"
+            InputLabelProps={{
+              style: getLabelStyles(), // Apply reusable label styles
+            }}
             sx={{
-              mb: 4, // Increased gap
-              width: "360px", // Updated size
-              height: "46px", // Updated size
+              mb: 1.5, // Reduced gap between fields
               flexShrink: 0,
               backgroundColor: "#FFF",
-              fill: "#FFF",
               "& .MuiOutlinedInput-root": {
                 borderRadius: 4, // Rounded corners
               },
@@ -41,13 +51,13 @@ const OneClickInstallForm = () => {
             fullWidth
             label="Select Config Package"
             variant="outlined"
+            InputLabelProps={{
+              style: getLabelStyles(), // Apply reusable label styles
+            }}
             sx={{
-              mb: 4, // Increased gap
-              width: "360px", // Updated size
-              height: "46px", // Updated size
+              mb: 1.5, // Reduced gap between fields
               flexShrink: 0,
               backgroundColor: "#FFF",
-              fill: "#FFF",
               "& .MuiOutlinedInput-root": {
                 borderRadius: 4, // Rounded corners
               },
@@ -66,7 +76,7 @@ const OneClickInstallForm = () => {
               fontWeight: 400,
               textDecoration: "none",
               cursor: "pointer",
-              mb: 2,
+              mb: 1, // Reduced gap between the last TextField and the "Browse" link
             }}
           >
             Browse
