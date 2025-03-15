@@ -16,36 +16,12 @@
   z-index: -1;
 }
 
-.login-box {
-  position: relative;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
+.logo {
+  width: 220px;
+  height: 60px;
 }
 
-.login-box input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-box button {
-  width: 100%;
-  padding: 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.login-box button:hover {
-  background: #0056b3;
+p.upload-text {
+  font-size: medium;
+  font-family: ui-serif;
 }
