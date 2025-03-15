@@ -79,14 +79,7 @@ const DistributerData = () => {
 
   return (
     <div>
-      <TableContainer
-        sx={{
-          borderRadius: "8px",
-          overflow: "hidden",
-          boxShadow: 3, // Optional: adds shadow for better visual appeal
-          border: "1px solid #ddd", // Optional: adds border around the table container
-        }}
-      >
+      <TableContainer>
         <Table
           size="small"
           sx={{
@@ -96,7 +89,7 @@ const DistributerData = () => {
         >
           <TableHead>
             <TableRow sx={{ backgroundColor: "#DFE7ED" }}>
-              <TableCell sx={{ ...cellStyle, borderTopLeftRadius: 8 }}>
+              <TableCell sx={{ ...cellStyle, borderTopLeftRadius: 8, borderBottomLeftRadius: 8, padding: 2 }}>
                 <b>Distributer ID</b>
               </TableCell>
               <TableCell sx={cellStyle}>
@@ -114,11 +107,12 @@ const DistributerData = () => {
               <TableCell sx={{ ...cellStyle, textAlign: "center" }}>
                 <b>Status</b>
               </TableCell>
-              <TableCell sx={{ ...actionCellStyle, borderTopRightRadius: 8 }}>
+              <TableCell sx={{ ...actionCellStyle, borderTopRightRadius: 8, borderBottomRightRadius: 8 }}>
                 <b>Actions</b>
               </TableCell>
             </TableRow>
           </TableHead>
+
 
           <TableBody>
             {rows
@@ -159,14 +153,14 @@ const DistributerData = () => {
                           row.status === "Failed"
                             ? "#FDECEA"
                             : row.status === "Pending"
-                            ? "#F5F5F5"
-                            : "#E8F5E9",
+                              ? "#F5F5F5"
+                              : "#E8F5E9",
                         color:
                           row.status === "Failed"
                             ? "#D32F2F"
                             : row.status === "Pending"
-                            ? "#757575"
-                            : "#12CA95",
+                              ? "#757575"
+                              : "#12CA95",
                         borderRadius: "16px",
                         padding: "2px 12px",
                         display: "inline-block",

@@ -1,23 +1,29 @@
 import React from "react";
-import { Box, TextField, InputAdornment, Button } from "@mui/material";
+import { Box, TextField, InputAdornment, Button, Typography } from "@mui/material";
 import DistributerData from "./DistributorData";
 
 const Distributer = () => {
   return (
     <Box sx={{ backgroundColor: "#FFF", borderRadius: 2, p: 2 }}>
+        {/* Title for the DistributerData */}
+        <Box sx={{ textAlign: "center", mb: 3 }}>
+        <Typography variant="h5" sx={{ fontWeight: 600, color: "#333" }}>
+          EMAILS
+        </Typography>
+      </Box>
       <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
-        <TextField 
-          variant="outlined" 
-          placeholder="Search" 
-          size="medium" 
-          sx={{ 
-            width: "400px", 
-            height: "40px",  // Ensure both components have the same height
+        <TextField
+          variant="outlined"
+          placeholder="Search"
+          size="medium"
+          sx={{
+            width: "400px",
+            height: "40px", // Ensure both components have the same height
             borderRadius: 4, // Apply border radius to the TextField
             "& .MuiOutlinedInput-root": {
-              height: "100%",  // Ensure the input takes full height
+              height: "100%", // Ensure the input takes full height
               borderRadius: 4, // Apply border radius to the input part of the TextField
-            }
+            },
           }}
           InputProps={{
             startAdornment: (
@@ -27,12 +33,12 @@ const Distributer = () => {
             ),
           }}
         />
-        <Button 
-          variant="contained" 
-          color="primary" 
+        <Button
+          variant="contained"
+          color="primary"
           sx={{
             width: "130px",
-            height: "40px",  // Match the height of the TextField
+            height: "40px", // Match the height of the TextField
             flexShrink: 0,
             backgroundColor: "#12CA95",
             color: "#FFF",
@@ -46,7 +52,6 @@ const Distributer = () => {
           Send Email
         </Button>
       </Box>
-      
       <Box>
         <DistributerData />
       </Box>
