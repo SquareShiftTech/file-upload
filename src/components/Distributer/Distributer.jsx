@@ -10,14 +10,21 @@ const Distributer = () => {
           variant="outlined" 
           placeholder="Search" 
           size="medium" 
-          sx={{ width: "400px", height: "20px" }}
+          sx={{ 
+            width: "400px", 
+            height: "40px",  // Ensure both components have the same height
+            borderRadius: 4, // Apply border radius to the TextField
+            "& .MuiOutlinedInput-root": {
+              height: "100%",  // Ensure the input takes full height
+              borderRadius: 4, // Apply border radius to the input part of the TextField
+            }
+          }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
                 <img src="/search.svg" alt="search icon" width={20} height={20} />
               </InputAdornment>
             ),
-            sx: { borderRadius: 2 }
           }}
         />
         <Button 
@@ -25,23 +32,21 @@ const Distributer = () => {
           color="primary" 
           sx={{
             width: "130px",
-            height: "40px",
+            height: "40px",  // Match the height of the TextField
             flexShrink: 0,
             backgroundColor: "#12CA95",
             color: "#FFF",
             fontFamily: "Poppins",
             fontSize: "17px",
-            fontStyle: "normal",
             fontWeight: 500,
-            lineHeight: "normal",
-            textTransform: "none"
+            textTransform: "none",
+            borderRadius: 4, // Apply border radius to the Button
           }}
         >
           Send Email
         </Button>
       </Box>
       
-      {/* DistributerData on a new line */}
       <Box>
         <DistributerData />
       </Box>

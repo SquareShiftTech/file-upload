@@ -47,16 +47,17 @@ const DistributerData = () => {
       <TableContainer>
         <Table size="small" sx={{ borderCollapse: "collapse" }}>
           <TableHead>
-            <TableRow sx={{ backgroundColor: "#F0F0F0" }}>
-              <TableCell sx={{ backgroundColor: "#F0F0F0" }}><b>Distributer ID</b></TableCell>
-              <TableCell sx={{ backgroundColor: "#F0F0F0" }}><b>Distributer Name</b></TableCell>
-              <TableCell sx={{ backgroundColor: "#F0F0F0" }}><b>Date</b></TableCell>
-              <TableCell sx={{ backgroundColor: "#F0F0F0" }}><b>Email</b></TableCell>
-              <TableCell sx={{ backgroundColor: "#F0F0F0", textAlign: "center" }}><b>Content</b></TableCell>
-              <TableCell sx={{ backgroundColor: "#F0F0F0", textAlign: "center" }}><b>Status</b></TableCell>
-              <TableCell sx={{ borderTopRightRadius: 8, backgroundColor: "#F0F0F0", textAlign: "center" }}><b>Actions</b></TableCell>
+            <TableRow sx={{ backgroundColor: "#DFE7ED" }}>
+              <TableCell><b>Distributer ID</b></TableCell>
+              <TableCell><b>Distributer Name</b></TableCell>
+              <TableCell><b>Date</b></TableCell>
+              <TableCell><b>Email</b></TableCell>
+              <TableCell sx={{ textAlign: "center" }}><b>Content</b></TableCell>
+              <TableCell sx={{ textAlign: "center" }}><b>Status</b></TableCell>
+              <TableCell sx={{ borderTopRightRadius: 8, textAlign: "center" }}><b>Actions</b></TableCell>
             </TableRow>
           </TableHead>
+
           <TableBody>
             {rows.slice((page - 1) * rowsPerPage, page * rowsPerPage).map((row, index) => (
               <TableRow key={index} sx={{ height: "24px", "& td": { borderBottom: "none", padding: "4px 8px" } }}>
@@ -71,14 +72,14 @@ const DistributerData = () => {
                 <TableCell>{row.email}</TableCell>
                 <TableCell sx={{ color: "#12CA95", cursor: "pointer", textAlign: "center" }} onClick={() => handleViewClick(row)}>{row.content}</TableCell>
                 <TableCell sx={{ textAlign: "center", width: "100px" }}>
-                  <span 
-                    style={{ 
-                      backgroundColor: row.status === "Failed" ? "#FDECEA" : row.status === "Pending" ? "#F5F5F5" : "#E8F5E9", 
-                      color: row.status === "Failed" ? "#D32F2F" : row.status === "Pending" ? "#757575" : "#12CA95", 
-                      borderRadius: "16px", 
-                      padding: "2px 12px", 
-                      display: "inline-block", 
-                      fontSize: "12px" 
+                  <span
+                    style={{
+                      backgroundColor: row.status === "Failed" ? "#FDECEA" : row.status === "Pending" ? "#F5F5F5" : "#E8F5E9",
+                      color: row.status === "Failed" ? "#D32F2F" : row.status === "Pending" ? "#757575" : "#12CA95",
+                      borderRadius: "16px",
+                      padding: "2px 12px",
+                      display: "inline-block",
+                      fontSize: "12px"
                     }}
                   >
                     {row.status}
