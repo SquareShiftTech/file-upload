@@ -9,6 +9,9 @@ import { FaChartPie } from "react-icons/fa";
 import { FaUpload } from "react-icons/fa";
 import success from "../../assets/success.png";
 import PleaseScreen from "../Pages/PleaseScreen.js";
+import OneClickInstall from "../OneClick/OneClickInstall.jsx"
+import Distributer from "../Distributer/Distributer.jsx";
+
 const Dashboard = () => {
   const [activePage, setActivePage] = useState("home");
   const [stockFile, setStockFile] = useState(null);
@@ -184,8 +187,8 @@ const Dashboard = () => {
 
           {/* Bhaskar Content */}
 
-          {activePage === "profile" && <h2>Profile Page</h2>}
-          {activePage === "settings" && <h2>Settings Page</h2>}
+          {activePage === "profile" && <OneClickInstall />}
+          {activePage === "settings" && <Distributer />}
         </main>
       </div>
     </div>
