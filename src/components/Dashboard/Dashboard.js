@@ -16,6 +16,7 @@ import forecast from "../../assets/forecast.png";
 
 import OneClickInstall from "../OneClick/OneClickInstall.jsx";
 import Distributer from "../Distributer/Distributer.jsx";
+import LookerIframe from "../ExternalSiteInfo/LookerIframe.jsx";
 
 const Dashboard = () => {
   const [activePage, setActivePage] = useState("home");
@@ -100,6 +101,10 @@ const Dashboard = () => {
             <FaTable
               className={`icon ${activePage === "settings" ? "active" : ""}`}
               onClick={() => handleNavigation("settings")}
+            />
+            <FaTable
+              className={`icon ${activePage === "iframe" ? "active" : ""}`}
+              onClick={() => handleNavigation("iframe")}
             />
           </nav>
           <div className="profile-pic">
@@ -222,6 +227,10 @@ const Dashboard = () => {
               <Distributer />
             </div>
           )}
+          {activePage === "iframe" && (
+            <LookerIframe />
+          )}
+
         </main>
       </div>
     </div>
