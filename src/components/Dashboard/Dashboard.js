@@ -7,10 +7,11 @@ import { FaFileUpload } from "react-icons/fa";
 import { FaTable } from "react-icons/fa";
 import { FaChartPie } from "react-icons/fa";
 import { FaUpload } from "react-icons/fa";
-import upload from "../../assets/upload.png";
-import uploadload from "../../assets/upload-load.png";
+import { AiOutlineDashboard } from "react-icons/ai";
 
-import success from "../../assets/success.png";
+import merged from "../../assets/merged.gif";
+import mergedcopy from "../../assets/merged-copy.gif";
+
 import PleaseScreen from "../Pages/PleaseScreen.js";
 import forecast from "../../assets/forecast.png";
 
@@ -31,33 +32,21 @@ const Dashboard = () => {
   };
   const handleFileChange = (event, type) => {
     if (type === "stock") {
-      setStockUploadImage(upload);
+      setStockUploadImage(merged);
       setStockFile(event.target.files[0]);
-
-      setTimeout(() => {
-        setStockUploadImage(uploadload);
-        setTimeout(() => {
-          setStockUploadImage(success);
-        }, 1000);
-      }, 1000);
     } else if (type === "sales") {
-      setSalesUploadImage(upload);
+      setSalesUploadImage(mergedcopy);
       setSalesFile(event.target.files[0]);
-
-      setTimeout(() => {
-        setSalesUploadImage(uploadload);
-        setTimeout(() => {
-          setSalesUploadImage(success);
-        }, 1000);
-      }, 1000);
     }
   };
 
   const removeFile = (type) => {
     if (type === "stock") {
       setStockFile(null);
+      setStockUploadImage(null);
     } else if (type === "sales") {
       setSalesFile(null);
+      setSalesUploadImage(null);
     }
   };
 
@@ -102,7 +91,7 @@ const Dashboard = () => {
               className={`icon ${activePage === "settings" ? "active" : ""}`}
               onClick={() => handleNavigation("settings")}
             />
-            <FaTable
+            <AiOutlineDashboard
               className={`icon ${activePage === "iframe" ? "active" : ""}`}
               onClick={() => handleNavigation("iframe")}
             />
@@ -204,17 +193,6 @@ const Dashboard = () => {
             </div>
           )}
           {activePage === "analytics" && <PleaseScreen />}
-
-          {/* {activePage === "home" && (
-            <div className="info-section">
-              <h2 className="info-title">FORECAST AI</h2>
-              <p className="info-description">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
-              </p>
-            </div>
-          )} */}
-
           {activePage === "profile" && (
             <div className="centered-content">
               <OneClickInstall />
@@ -227,10 +205,7 @@ const Dashboard = () => {
               <Distributer />
             </div>
           )}
-          {activePage === "iframe" && (
-            <LookerIframe />
-          )}
-
+          {activePage === "iframe" && <LookerIframe />}
         </main>
       </div>
     </div>
