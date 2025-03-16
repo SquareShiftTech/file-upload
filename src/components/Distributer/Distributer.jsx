@@ -4,7 +4,7 @@ import DistributerData from "./DistributorData";
 
 const Distributer = () => {
   return (
-    <Box sx={{ backgroundColor: "#FFF", borderRadius: 10, p: 2 }}>    
+    <Box sx={{ backgroundColor: "#FFF", borderRadius: 10, p: 2 }}>
       <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
         <TextField
           variant="outlined"
@@ -31,20 +31,25 @@ const Distributer = () => {
           variant="contained"
           color="primary"
           sx={{
-            width: "130px",
-            height: "40px", // Match the height of the TextField
+            width: "130px", // Ensure enough width for text
+            height: "40px", // Match TextField height
             flexShrink: 0,
             backgroundColor: "#12CA95",
             color: "#FFF",
             fontFamily: "Poppins",
-            fontSize: "17px",
+            fontSize: "16px", // Reduce font size slightly if necessary
             fontWeight: 500,
             textTransform: "none",
-            borderRadius: 4, // Apply border radius to the Button
+            borderRadius: 4,
+            whiteSpace: "nowrap", // ✅ Prevent text from wrapping
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           Send Email
         </Button>
+
       </Box>
       <Box sx={{
         height: '60vh'

@@ -86,8 +86,11 @@ img.edc-forecast {
 
 .distributer-title {
   font-size: 28px; /* Adjust size as needed */
-  font-weight: bold;
-  color: #210c54; /* Title color (can be changed as per your theme) */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #210C54; /* Title color (can be changed as per your theme) */
   margin: 20px; /* Spacing between title and component */
 }
 

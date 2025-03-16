@@ -29,9 +29,9 @@ const cellStyle = {
 const headerCellStyle = {
   color: "#808199",
   fontFamily: "Poppins",
-  fontSize: "16px", // Increased font size
+  fontSize: "14px", // Increased font size
   fontStyle: "normal",
-  fontWeight: 600, // Made it bolder for emphasis
+  // fontWeight: 400, // Made it bolder for emphasis
   lineHeight: "normal",
   padding: "12px", // Increased padding for better spacing
 };
