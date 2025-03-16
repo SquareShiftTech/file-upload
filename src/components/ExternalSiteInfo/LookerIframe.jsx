@@ -23,7 +23,7 @@ const LookerIframe = () => {
         fontWeight="bold" 
         sx={{ width: "100%", textAlign: "center", paddingBottom: 3 }} // Ensures proper centering
       >
-        Looker Dashboard
+        Dashboard
       </Typography>
 
       {/* Iframe Wrapper to Control Size */}
