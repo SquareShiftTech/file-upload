@@ -53,7 +53,7 @@ const DistributerData = () => {
   const [rows, setRows] = useState([]);
   const [selectedRow, setSelectedRow] = useState(null);
   const [page, setPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [rowsPerPage, setRowsPerPage] = useState(9);
   const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {

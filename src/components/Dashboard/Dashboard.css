@@ -65,6 +65,22 @@
   background: #edf5fb;
 }
 
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center the text inside */
+  height: 100%; /* Ensure full height to center the content */
+}
+
+.distributer-title {
+  font-size: 28px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #210C54; /* Title color (can be changed as per your theme) */
+  margin: 20px; /* Spacing between title and component */
+}
+
 img.edc-please-message-screen {
   object-fit: contain;
   width: 100%;

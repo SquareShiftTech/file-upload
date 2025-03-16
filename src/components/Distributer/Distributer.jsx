@@ -4,13 +4,7 @@ import DistributerData from "./DistributorData";
 
 const Distributer = () => {
   return (
-    <Box sx={{ backgroundColor: "#FFF", borderRadius: 2, p: 2 }}>
-        {/* Title for the DistributerData */}
-        <Box sx={{ textAlign: "center", mb: 3 }}>
-        <Typography variant="h5" sx={{ fontWeight: 600, color: "#333" }}>
-          EMAILS
-        </Typography>
-      </Box>
+    <Box sx={{ backgroundColor: "#FFF", borderRadius: 2, p: 2 }}>    
       <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
         <TextField
           variant="outlined"
