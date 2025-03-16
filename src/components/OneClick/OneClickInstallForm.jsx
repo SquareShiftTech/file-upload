@@ -39,7 +39,7 @@ const OneClickInstallForm = () => {
               style: getLabelStyles(), // Apply reusable label styles
             }}
             sx={{
-              mb: 1.5, // Reduced gap between fields
+              mb: 4, // Reduced gap between fields
               flexShrink: 0,
               backgroundColor: "#FFF",
               "& .MuiOutlinedInput-root": {
@@ -55,7 +55,7 @@ const OneClickInstallForm = () => {
               style: getLabelStyles(), // Apply reusable label styles
             }}
             sx={{
-              mb: 1.5, // Reduced gap between fields
+              mb: 4, // Reduced gap between fields
               flexShrink: 0,
               backgroundColor: "#FFF",
               "& .MuiOutlinedInput-root": {
