@@ -40,9 +40,6 @@ const DistributerDetailModal = ({ open, onClose, row }) => {
           <b>Email:</b> {row.email}
         </Typography>
         <Typography sx={{ mt: 1 }}>
-          <b>Content:</b> {row.content}
-        </Typography>
-        <Typography sx={{ mt: 1 }}>
           <b>Status:</b> {row.status}
         </Typography>
         <Box mt={2} display="flex" justifyContent="flex-end">
