@@ -1,16 +1,32 @@
-import React from "react";
-import { Box, Paper } from "@mui/material";
+import React, { useState } from "react";
+import { Box, CircularProgress } from "@mui/material";
 
 const Iframe = ({ src }) => {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <iframe
-      src={src}
-      style={{
-        width: "100%",
-        height: "100vh",
-      }}
-      title="Dynamic Iframe"
-    ></iframe>
+    <Box position="relative" width="100%" height="100vh">
+      {loading && (
+        <Box
+          position="absolute"
+          top="40%"
+          left="40%"
+          transform="translate(-50%, -50%)"
+        >
+          <CircularProgress />
+        </Box>
+      )}
+      <iframe
+        src={src}
+        style={{
+          width: "100%",
+          height: "100vh",
+          display: loading ? "none" : "block",
+        }}
+        title="Dynamic Iframe"
+        onLoad={() => setLoading(false)}
+      ></iframe>
+    </Box>
   );
 };
 
