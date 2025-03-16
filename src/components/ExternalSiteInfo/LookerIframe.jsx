@@ -21,7 +21,7 @@ const LookerIframe = () => {
       <Typography 
         variant="h4" 
         fontWeight="bold" 
-        sx={{ width: "100%", textAlign: "center" }} // Ensures proper centering
+        sx={{ width: "100%", textAlign: "center", paddingBottom: 3 }} // Ensures proper centering
       >
         Looker Dashboard
       </Typography>
@@ -29,7 +29,7 @@ const LookerIframe = () => {
       {/* Iframe Wrapper to Control Size */}
       <Box
         sx={{
-          width: "90%", // Keeps iframe responsive
+          width: "100%", // Keeps iframe responsive
           height: "85vh", // Prevents overflow
           overflow: "hidden", // Prevents iframe from exceeding boundaries
           borderRadius: 2,
@@ -37,7 +37,7 @@ const LookerIframe = () => {
         }}
       >
         {/* Iframe Component */}
-        <Iframe src="https://www.wikipedia.org/" />
+        <Iframe src="https://www.squareshift.co/" />
       </Box>
     </Box>
   );
