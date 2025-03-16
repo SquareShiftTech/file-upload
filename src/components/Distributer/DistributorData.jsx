@@ -26,6 +26,16 @@ const cellStyle = {
   padding: "8px", // Consistent padding for both header and body cells
 };
 
+const headerCellStyle = {
+  color: "#808199",
+  fontFamily: "Poppins",
+  fontSize: "16px", // Increased font size
+  fontStyle: "normal",
+  fontWeight: 600, // Made it bolder for emphasis
+  lineHeight: "normal",
+  padding: "12px", // Increased padding for better spacing
+};
+
 // Reusable style for the "Actions" column cell
 const actionCellStyle = {
   textAlign: "center",
@@ -102,39 +112,40 @@ const DistributerData = () => {
               width: "100%", // Make sure the table spans the full container width
             }}
           >
-            <TableHead>
-              <TableRow sx={{ backgroundColor: "#DFE7ED" }}>
-                <TableCell
-                  sx={{
-                    ...cellStyle,
-                    borderTopLeftRadius: 8,
-                    borderBottomLeftRadius: 8,
-                    paddingLeft: 6,
-                    paddingRight: 10,
-                  }}
-                >
-                  <b>Distributer ID</b>
-                </TableCell>
-                <TableCell sx={cellStyle}>
-                  <b>Distributer Name</b>
-                </TableCell>
-                <TableCell sx={cellStyle}>
-                  <b>Date</b>
-                </TableCell>
-                <TableCell sx={cellStyle}>
-                  <b>Email</b>
-                </TableCell>
-                <TableCell sx={{ ...cellStyle, textAlign: "center" }}>
-                  <b>Content</b>
-                </TableCell>
-                <TableCell sx={{ ...cellStyle, textAlign: "center" }}>
-                  <b>Status</b>
-                </TableCell>
-                <TableCell sx={{ ...actionCellStyle, borderTopRightRadius: 8, borderBottomRightRadius: 8 }}>
-                  <b>Actions</b>
-                </TableCell>
-              </TableRow>
-            </TableHead>
+            <TableHead sx={{backgroundColor: "#DFE7ED"}}>
+  <TableRow sx={{ backgroundColor: "#DFE7ED" }}>
+    <TableCell
+      sx={{
+        ...headerCellStyle,
+        borderTopLeftRadius: 8,
+        borderBottomLeftRadius: 8,
+        paddingLeft: 6,
+        paddingRight: 10,
+      }}
+    >
+      <b>Distributer ID</b>
+    </TableCell>
+    <TableCell sx={headerCellStyle}>
+      <b>Distributer Name</b>
+    </TableCell>
+    <TableCell sx={headerCellStyle}>
+      <b>Date</b>
+    </TableCell>
+    <TableCell sx={headerCellStyle}>
+      <b>Email</b>
+    </TableCell>
+    <TableCell sx={{ ...headerCellStyle, textAlign: "center" }}>
+      <b>Content</b>
+    </TableCell>
+    <TableCell sx={{ ...headerCellStyle, textAlign: "center" }}>
+      <b>Status</b>
+    </TableCell>
+    <TableCell sx={{ ...headerCellStyle, borderTopRightRadius: 8, borderBottomRightRadius: 8 }}>
+      <b>Actions</b>
+    </TableCell>
+  </TableRow>
+</TableHead>
+
 
             <TableBody>
               {rows
