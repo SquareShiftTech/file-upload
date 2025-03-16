@@ -90,7 +90,7 @@ img.edc-forecast {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: #210C54; /* Title color (can be changed as per your theme) */
+  color: #210c54; /* Title color (can be changed as per your theme) */
   margin: 20px; /* Spacing between title and component */
 }
 
@@ -276,6 +276,11 @@ input#file2 {
   cursor: pointer;
   color: grey;
 }
+.file-chip .remove-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  color: grey;
+}
 
 img.edc-success {
   width: 250px;
@@ -285,4 +290,5 @@ img.edc-success {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: 2px solid #26b297;
 }
