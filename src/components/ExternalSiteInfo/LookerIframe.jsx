@@ -36,8 +36,8 @@ const LookerIframe = () => {
           boxShadow: 3, // Adds slight elevation
         }}
       >
-        {/* Iframe Component */}
-        <Iframe src="https://www.squareshift.co/" />
+        {/* Iframe Component */}        
+        <Iframe src="https://squareshift.cloud.looker.com/embed/dashboards/331?Distributor+Name=Audio+House&Sales+Date=7+day" />
       </Box>
     </Box>
   );
