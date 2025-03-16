@@ -187,7 +187,11 @@ const Dashboard = () => {
 
           {/* Bhaskar Content */}
 
-          {activePage === "profile" && <OneClickInstall />}
+          {activePage === "profile" && (
+            <div className="centered-content">
+              <OneClickInstall />
+            </div>
+          )}
           {activePage === "settings" && (
             <div className="centered-content">
               <h2 className="distributer-title">EMAILS</h2> {/* Title for Distributer */}
