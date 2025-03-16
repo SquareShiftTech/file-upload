@@ -20,7 +20,7 @@ const EmailTemplate = () => {
         textAlign="center"
         gutterBottom
       >
-        Launch of iPhone 16e
+        Forecast Demand
       </Typography>
 
       {/* Body Content */}
@@ -29,9 +29,8 @@ const EmailTemplate = () => {
       </Typography>
 
       <Typography variant="body1" gutterBottom>
-        I hope this email finds you well. As we approach the exciting launch of
-        the iPhone 16e for Corporate Customers, I want to ensure you're fully
-        prepared to capitalize on this opportunity.
+      I hope this email finds you well. We want to ensure you're fully prepared to capitalize the growing demand.
+
       </Typography>
 
       <Box mt={2}>
@@ -44,54 +43,8 @@ const EmailTemplate = () => {
             <b>25%</b> increase in sales compared to last year’s launch. Please
             adjust your inventory accordingly.
           </li>
-          <li>
-            <strong>Initial Stock:</strong> We recommend stocking at least{" "}
-            <b>140%</b> of your typical monthly iPhone inventory for the first
-            month post-launch.
-          </li>
-          <li>
-            <strong>Reorder Point:</strong> Set your reorder point at <b>45%</b>{" "}
-            of initial stock to maintain optimal inventory levels.
-          </li>
         </ul>
       </Box>
-
-      {/* Infographic Section */}
-      <Paper
-        elevation={0}
-        sx={{
-          background: "#f7f7f7",
-          borderRadius: 2,
-        }}
-      >
-        <Grid container spacing={0} textAlign="center">
-          <Grid item xs={4}>
-            <Typography variant="h6" color="#210C54" fontWeight="bold">
-              Shelf Space Requirements
-            </Typography>
-            <Typography variant="h5" fontWeight="bold">
-              35%
-            </Typography>
-          </Grid>
-          <Grid item xs={4}>
-            <Typography variant="h6" color="#210C54" fontWeight="bold">
-              Week 1-2 Demand
-            </Typography>
-            <Typography variant="h5" fontWeight="bold">
-              50%
-            </Typography>
-          </Grid>
-          <Grid item xs={4}>
-            <Typography variant="h6" color="#210C54" fontWeight="bold">
-              Monthly Forecast of Units
-            </Typography>
-            <Typography variant="h5" fontWeight="bold">
-              2,150
-            </Typography>
-          </Grid>
-        </Grid>
-      </Paper>
-
       {/* Footer */}
       <Typography variant="body2" color="#555" mt={2}>
         By following these guidelines, we can ensure a successful launch and
@@ -99,11 +52,7 @@ const EmailTemplate = () => {
         additional support, please don’t hesitate to contact your account
         manager.
       </Typography>
-
-      <Typography variant="body1" mt={2}>
-        Let’s make this launch a resounding success together!
-      </Typography>
-
+      <br /><br />
       <Typography variant="body1" mt={2}>
         Best regards,
         <br />
