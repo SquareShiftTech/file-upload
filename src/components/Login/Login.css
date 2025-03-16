@@ -25,3 +25,18 @@ p.upload-text {
   font-size: medium;
   font-family: ui-serif;
 }
+
+.upload-section {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.start-section {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}

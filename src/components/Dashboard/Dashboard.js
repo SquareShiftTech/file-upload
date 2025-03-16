@@ -9,7 +9,9 @@ import { FaChartPie } from "react-icons/fa";
 import { FaUpload } from "react-icons/fa";
 import success from "../../assets/success.png";
 import PleaseScreen from "../Pages/PleaseScreen.js";
-import OneClickInstall from "../OneClick/OneClickInstall.jsx"
+import forecast from "../../assets/forecast.png";
+
+import OneClickInstall from "../OneClick/OneClickInstall.jsx";
 import Distributer from "../Distributer/Distributer.jsx";
 
 const Dashboard = () => {
@@ -86,7 +88,8 @@ const Dashboard = () => {
         {/* Main Content */}
         <main className="main-content">
           {activePage === "home" && (
-            <>
+            <div className="centered-forecast-content">
+              <img src={forecast} alt="forecast" className="edc-forecast" />
               <div className="start-section">
                 <button
                   className="start-button"
@@ -171,11 +174,11 @@ const Dashboard = () => {
                   )}
                 </div>
               </div>
-            </>
+            </div>
           )}
           {activePage === "analytics" && <PleaseScreen />}
 
-          {activePage === "home" && (
+          {/* {activePage === "home" && (
             <div className="info-section">
               <h2 className="info-title">FORECAST AI</h2>
               <p className="info-description">
@@ -183,9 +186,7 @@ const Dashboard = () => {
                 accusantium doloremque laudantium.
               </p>
             </div>
-          )}
-
-          {/* Bhaskar Content */}
+          )} */}
 
           {activePage === "profile" && (
             <div className="centered-content">
@@ -194,7 +195,8 @@ const Dashboard = () => {
           )}
           {activePage === "settings" && (
             <div className="centered-content">
-              <h2 className="distributer-title">EMAILS</h2> {/* Title for Distributer */}
+              <h2 className="distributer-title">EMAILS</h2>{" "}
+              {/* Title for Distributer */}
               <Distributer />
             </div>
           )}
