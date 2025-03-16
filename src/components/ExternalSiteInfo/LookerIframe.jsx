@@ -1,12 +1,45 @@
 import React from "react";
+import { Box, Typography } from "@mui/material";
 import Iframe from "./Iframe";
 
 const LookerIframe = () => {
   return (
-    <div style={{ textAlign: "center" }}> {/* Center align title */}
-      <h1>Looker Dashboard</h1>
-      <Iframe src="https://www.wikipedia.org" />
-    </div>
+    <Box
+      sx={{
+        // display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 2, // Space between elements
+        p: 2, // Padding
+        width: "80vw",
+        height: "80vh", // Ensures it doesn't overflow viewport
+        // overflow: "hidden", // Prevents content from spilling outside
+      }}
+    >
+      {/* Properly Centered Title */}
+      <Typography 
+        variant="h4" 
+        fontWeight="bold" 
+        sx={{ width: "100%", textAlign: "center" }} // Ensures proper centering
+      >
+        Looker Dashboard
+      </Typography>
+
+      {/* Iframe Wrapper to Control Size */}
+      <Box
+        sx={{
+          width: "90%", // Keeps iframe responsive
+          height: "85vh", // Prevents overflow
+          overflow: "hidden", // Prevents iframe from exceeding boundaries
+          borderRadius: 2,
+          boxShadow: 3, // Adds slight elevation
+        }}
+      >
+        {/* Iframe Component */}
+        <Iframe src="https://www.wikipedia.org/" />
+      </Box>
+    </Box>
   );
 };
 

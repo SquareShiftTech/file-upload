@@ -1,14 +1,37 @@
 import React from "react";
+import { Box, Paper } from "@mui/material";
 
-const Iframe = ({ src, width = "900", height = "600" }) => {
+const Iframe = ({ src }) => {
   return (
-    <iframe
-      src={src}
-      width={width}
-      height={height}
-      style={{ border: "none", borderRadius: "8px" }}
-      title="Dynamic Iframe"
-    ></iframe>
+    <Box
+      sx={{
+        // width: "100vw",
+        height: "100vh",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Paper
+        elevation={0}
+        sx={{
+          width: "100%",
+          height: "100vh",
+          borderRadius: 2,
+          overflow: "hidden", // Prevents parent scroll
+        }}
+      >
+        <iframe
+          src={src}
+          style={{
+            width: "100%",
+            height: "100%",
+            border: "none",
+            display: "block",
+          }}
+          title="Dynamic Iframe"
+        ></iframe>
+      </Paper>
+    </Box>
   );
 };
 
