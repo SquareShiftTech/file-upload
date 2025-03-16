@@ -68,3 +68,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### `DEPLOY` fails to minify
+
+gcloud config get-value project
+
+internal-live-project
+danussh@MacBook-Pro-4 file-upload % npm install
+
+danussh@MacBook-Pro-4 file-upload % npm run build
+
+danussh@MacBook-Pro-4 file-upload % gcloud run deploy ai-launch-pad --source . --region us-central1 --allow-unauthenticated
+
+Building using Buildpacks and deploying container to Cloud Run service [ai-launch-pad] in project [internal-live-project] region [us-central1]
+✓ Building and deploying new service... Done.                         
+  ✓ Uploading sources...                                              
+  ✓ Building Container... Logs are available at [https://console.cloud
+  .google.com/cloud-build/builds/40ccfe9d-1d08-4f29-9a28-cdba5d9f7e38?
+  project=876289777625].                                              
+  ✓ Creating Revision...                                              
+  ✓ Routing traffic...                                                
+  ✓ Setting IAM Policy...                                             
+Done.                                                                 
+Service [ai-launch-pad] revision [ai-launch-pad-00001-d7s] has been deployed and is serving 100 percent of traffic.
+Service URL: https://ai-launch-pad-876289777625.us-central1.run.app
+
+danussh@MacBook-Pro-4 file-upload % gcloud run services list
+
+   SERVICE                         REGION       URL                                                                      LAST DEPLOYED BY                                              LAST DEPLOYED AT
+✔  ai-launch-pad                   us-central1  https://ai-launch-pad-876289777625.us-central1.run.app                   danussh@squareshift.co                                        2025-03-16T12:11:51.560656Z
+✔  leave-tracker                   us-central1  https://leave-tracker-876289777625.us-central1.run.app                   service-876289777625@gcf-admin-robot.iam.gserviceaccount.com  2024-11-29T02:44:25.670650Z
+✔  sqshft-interview-portal-client  us-central1  https://sqshft-interview-portal-client-876289777625.us-central1.run.app  narendran@squareshift.co                                      2025-02-23T01:36:26.301676Z
+✔  sqshft-interview-portal-server  us-central1  https://sqshft-interview-portal-server-876289777625.us-central1.run.app  narendran@squareshift.co                                      2025-02-23T01:37:28.194352Z
+
+danussh@MacBook-Pro-4 file-upload % gcloud run services describe ai-launch-pad --region us-central1 --format='value(status.conditions)'
+
+{'lastTransitionTime': '2025-03-16T12:11:51.560656Z', 'status': 'True', 'type': 'Ready'};{'lastTransitionTime': '2025-03-16T12:11:50.260839Z', 'status': 'True', 'type': 'ConfigurationsReady'};{'lastTransitionTime': '2025-03-16T12:11:51.517862Z', 'status': 'True', 'type': 'RoutesReady'}
+
+danussh@MacBook-Pro-4 file-upload %  
+
+TO BUILD FROM SOURCE
+IN CASE OF SERVICE UNAVAIBLE INCREASE INSTANCE THIS APPROACH IS WITHOUT DOCKER
+ai-launch-pad - is service name
+gcloud run deploy ai-launch-pad --source . 
