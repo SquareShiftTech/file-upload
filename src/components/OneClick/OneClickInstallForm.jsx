@@ -47,40 +47,41 @@ const OneClickInstallForm = () => {
               },
             }}
           />
-          <TextField
-            fullWidth
-            label="Select Config Package"
-            variant="outlined"
-            InputLabelProps={{
-              style: getLabelStyles(), // Apply reusable label styles
-            }}
-            sx={{
-              mb: 4, // Reduced gap between fields
-              flexShrink: 0,
-              backgroundColor: "#FFF",
-              "& .MuiOutlinedInput-root": {
-                borderRadius: 4, // Rounded corners
-              },
-            }}
-          />
-          <Typography
-            component="a"
-            href="#"
-            sx={{
-              display: "block",
-              textAlign: "right",
-              color: "#12CA95",
-              fontFamily: "Poppins",
-              fontSize: "15px",
-              fontStyle: "italic",
-              fontWeight: 400,
-              textDecoration: "none",
-              cursor: "pointer",
-              mb: 1, // Reduced gap between the last TextField and the "Browse" link
-            }}
-          >
-            Browse
-          </Typography>
+         <TextField
+  fullWidth
+  label="Select Config Package"
+  variant="outlined"
+  InputLabelProps={{
+    style: getLabelStyles(), // Apply reusable label styles
+  }}
+  sx={{
+    mb: 2, // Reduced gap between fields
+    flexShrink: 0,
+    backgroundColor: "#FFF",
+    "& .MuiOutlinedInput-root": {
+      borderRadius: 4, // Rounded corners
+    },
+  }}
+/>
+<Typography
+  component="a"
+  href="#"
+  sx={{
+    display: "block",
+    textAlign: "right",
+    color: "#12CA95",
+    fontFamily: "Poppins",
+    fontSize: "15px",
+    fontStyle: "italic",
+    fontWeight: 400,
+    textDecoration: "none",
+    cursor: "pointer",
+    mb: 0.5, // Further reduced gap
+  }}
+>
+  Browse
+</Typography>
+
         </Paper>
       </Container>
     </Box>
