@@ -50,11 +50,23 @@ const Dashboard = () => {
     }
   };
 
-  const handleStart = () => {
+  const handleStart = async () => {
     if (uploadComplete) {
-      setTimeout(() => {
-        setActivePage("analytics");
-      }, 2000);
+      setActivePage("analytics");
+      try {
+        await fetch("http://34.57.184.57:5000/upload", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: "Sample",
+            type: "test",
+          }),
+        });
+      } catch (error) {
+        console.error("Error uploading:", error);
+      }
     }
   };
 
