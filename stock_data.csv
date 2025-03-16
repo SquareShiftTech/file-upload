@@ -1,0 +1,101 @@
+benchmark_date,ec_region,category,product_name,ec_id,inventory_qty
+2025-03-13,West,Motorola Moto G73,Motorola Moto G73,536461,196
+2025-03-13,West,Nokia G22,Nokia G22,536461,150
+2025-03-13,South,OnePlus 11,OnePlus 11,713067,164
+2025-03-13,South,Realme GT3,Realme GT3,713067,206
+2025-03-13,West,Oppo Find X6,Oppo Find X6,713067,229
+2025-03-13,East,Motorola Moto G73,Motorola Moto G73,713067,170
+2025-03-13,East,Oppo Find X6,Oppo Find X6,856119,152
+2025-03-13,East,Vivo X90,Vivo X90,734058,248
+2025-03-13,West,Realme GT3,Realme GT3,569233,211
+2025-03-13,North,Oppo Find X6,Oppo Find X6,634815,202
+2025-03-13,East,Xiaomi 13,Xiaomi 13,634815,200
+2025-03-13,North,Realme GT3,Realme GT3,326478,205
+2025-03-13,East,Xiaomi 13,Xiaomi 13,326478,217
+2025-03-13,East,OnePlus 11,OnePlus 11,326478,201
+2025-03-13,East,Samsung Galaxy S23,Samsung Galaxy S23,326478,157
+2025-03-13,South,Vivo X90,Vivo X90,265611,208
+2025-03-13,West,Nokia G22,Nokia G22,265611,222
+2025-03-13,West,iPhone 15,iPhone 15,553991,201
+2025-03-13,North,Samsung Galaxy S23,Samsung Galaxy S23,553991,152
+2025-03-13,South,Nokia G22,Nokia G22,553991,243
+2025-03-13,West,Google Pixel 7,Google Pixel 7,785286,239
+2025-03-13,East,Realme GT3,Realme GT3,785286,209
+2025-03-13,South,Vivo X90,Vivo X90,785286,162
+2025-03-13,South,Google Pixel 7,Google Pixel 7,283375,165
+2025-03-13,East,Realme GT3,Realme GT3,491200,228
+2025-03-13,East,Oppo Find X6,Oppo Find X6,491200,192
+2025-03-13,East,Xiaomi 13,Xiaomi 13,491200,201
+2025-03-13,North,Samsung Galaxy S23,Samsung Galaxy S23,971045,220
+2025-03-13,East,Motorola Moto G73,Motorola Moto G73,772749,187
+2025-03-13,South,Realme GT3,Realme GT3,772749,179
+2025-03-13,East,Google Pixel 7,Google Pixel 7,772749,185
+2025-03-13,East,OnePlus 11,OnePlus 11,772749,197
+2025-03-13,North,Samsung Galaxy S23,Samsung Galaxy S23,439155,193
+2025-03-13,East,Google Pixel 7,Google Pixel 7,439155,213
+2025-03-13,North,Nokia G22,Nokia G22,439155,189
+2025-03-13,South,iPhone 15,iPhone 15,439155,174
+2025-03-13,East,Google Pixel 7,Google Pixel 7,223473,185
+2025-03-13,North,Nokia G22,Nokia G22,330985,207
+2025-03-13,North,Motorola Moto G73,Motorola Moto G73,330985,195
+2025-03-13,South,iPhone 15,iPhone 15,330985,226
+2025-03-13,West,Samsung Galaxy S23,Samsung Galaxy S23,330985,175
+2025-03-13,North,Google Pixel 7,Google Pixel 7,646552,174
+2025-03-13,West,Vivo X90,Vivo X90,198206,161
+2025-03-13,North,Motorola Moto G73,Motorola Moto G73,593879,198
+2025-03-13,North,OnePlus 11,OnePlus 11,593879,199
+2025-03-13,South,Vivo X90,Vivo X90,593879,187
+2025-03-13,East,Xiaomi 13,Xiaomi 13,593879,208
+2025-03-13,East,Vivo X90,Vivo X90,303019,242
+2025-03-13,East,Oppo Find X6,Oppo Find X6,303019,195
+2025-03-13,West,Realme GT3,Realme GT3,303019,161
+2025-03-13,East,iPhone 15,iPhone 15,694599,221
+2025-03-13,North,Samsung Galaxy S23,Samsung Galaxy S23,694599,242
+2025-03-13,South,Vivo X90,Vivo X90,694599,158
+2025-03-13,West,Realme GT3,Realme GT3,694599,203
+2025-03-13,South,Realme GT3,Realme GT3,442252,221
+2025-03-13,East,OnePlus 11,OnePlus 11,442252,163
+2025-03-13,West,Xiaomi 13,Xiaomi 13,442252,171
+2025-03-13,East,Xiaomi 13,Xiaomi 13,409352,206
+2025-03-13,North,Google Pixel 7,Google Pixel 7,409352,190
+2025-03-13,South,Realme GT3,Realme GT3,409352,215
+2025-03-13,West,Oppo Find X6,Oppo Find X6,888118,198
+2025-03-13,North,Vivo X90,Vivo X90,888118,167
+2025-03-13,South,Motorola Moto G73,Motorola Moto G73,888118,225
+2025-03-13,North,iPhone 15,iPhone 15,888118,188
+2025-03-13,West,Vivo X90,Vivo X90,496396,197
+2025-03-13,East,Motorola Moto G73,Motorola Moto G73,629695,163
+2025-03-13,East,Motorola Moto G73,Motorola Moto G73,410648,248
+2025-03-13,East,Samsung Galaxy S23,Samsung Galaxy S23,410648,162
+2025-03-13,West,Oppo Find X6,Oppo Find X6,684173,187
+2025-03-13,North,OnePlus 11,OnePlus 11,684173,171
+2025-03-13,West,Xiaomi 13,Xiaomi 13,468439,216
+2025-03-13,East,Realme GT3,Realme GT3,468439,179
+2025-03-13,North,Motorola Moto G73,Motorola Moto G73,288591,197
+2025-03-13,West,Google Pixel 7,Google Pixel 7,288591,215
+2025-03-13,West,OnePlus 11,OnePlus 11,288591,206
+2025-03-13,East,Realme GT3,Realme GT3,288591,205
+2025-03-13,South,Nokia G22,Nokia G22,311358,152
+2025-03-13,West,Google Pixel 7,Google Pixel 7,311358,226
+2025-03-13,East,Samsung Galaxy S23,Samsung Galaxy S23,311358,150
+2025-03-13,South,Motorola Moto G73,Motorola Moto G73,311358,154
+2025-03-13,South,Realme GT3,Realme GT3,580191,187
+2025-03-13,West,OnePlus 11,OnePlus 11,580191,187
+2025-03-13,North,Google Pixel 7,Google Pixel 7,353714,169
+2025-03-13,South,Motorola Moto G73,Motorola Moto G73,353714,250
+2025-03-13,West,Xiaomi 13,Xiaomi 13,910729,242
+2025-03-13,South,Xiaomi 13,Xiaomi 13,242475,226
+2025-03-13,West,OnePlus 11,OnePlus 11,242475,167
+2025-03-13,North,Samsung Galaxy S23,Samsung Galaxy S23,242475,188
+2025-03-13,South,Xiaomi 13,Xiaomi 13,506116,173
+2025-03-13,North,Vivo X90,Vivo X90,359837,170
+2025-03-13,South,Google Pixel 7,Google Pixel 7,359837,249
+2025-03-13,North,Samsung Galaxy S23,Samsung Galaxy S23,359837,173
+2025-03-13,South,Realme GT3,Realme GT3,239079,208
+2025-03-13,East,Motorola Moto G73,Motorola Moto G73,239079,179
+2025-03-13,North,Nokia G22,Nokia G22,341075,239
+2025-03-13,West,Google Pixel 7,Google Pixel 7,341075,161
+2025-03-13,South,Vivo X90,Vivo X90,341075,241
+2025-03-13,West,OnePlus 11,OnePlus 11,725627,165
+2025-03-13,West,Realme GT3,Realme GT3,725627,248
+2025-03-13,South,Samsung Galaxy S23,Samsung Galaxy S23,523179,222
