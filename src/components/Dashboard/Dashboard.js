@@ -7,6 +7,9 @@ import { FaFileUpload } from "react-icons/fa";
 import { FaTable } from "react-icons/fa";
 import { FaChartPie } from "react-icons/fa";
 import { FaUpload } from "react-icons/fa";
+import upload from "../../assets/upload.png";
+import uploadload from "../../assets/upload-load.png";
+
 import success from "../../assets/success.png";
 import PleaseScreen from "../Pages/PleaseScreen.js";
 import forecast from "../../assets/forecast.png";
@@ -19,19 +22,32 @@ const Dashboard = () => {
   const [stockFile, setStockFile] = useState(null);
   const [salesFile, setSalesFile] = useState(null);
   const [uploadComplete, setUploadComplete] = useState(false);
+  const [stockUploadImage, setStockUploadImage] = useState();
+  const [salesUploadImage, setSalesUploadImage] = useState();
 
   const handleNavigation = (page) => {
     setActivePage(page);
   };
-
   const handleFileChange = (event, type) => {
     if (type === "stock") {
+      setStockUploadImage(upload);
+      setStockFile(event.target.files[0]);
+
       setTimeout(() => {
-        setStockFile(event.target.files[0]);
+        setStockUploadImage(uploadload);
+        setTimeout(() => {
+          setStockUploadImage(success);
+        }, 1000);
       }, 1000);
     } else if (type === "sales") {
+      setSalesUploadImage(upload);
+      setSalesFile(event.target.files[0]);
+
       setTimeout(() => {
-        setSalesFile(event.target.files[0]);
+        setSalesUploadImage(uploadload);
+        setTimeout(() => {
+          setSalesUploadImage(success);
+        }, 1000);
       }, 1000);
     }
   };
@@ -111,7 +127,7 @@ const Dashboard = () => {
                   {stockFile ? (
                     <div className="upload-box-1">
                       <img
-                        src={success}
+                        src={stockUploadImage}
                         alt="success"
                         className="edc-success"
                       />
@@ -148,7 +164,7 @@ const Dashboard = () => {
                   {salesFile ? (
                     <div className="upload-box-2">
                       <img
-                        src={success}
+                        src={salesUploadImage}
                         alt="success"
                         className="edc-success"
                       />
