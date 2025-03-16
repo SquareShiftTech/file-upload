@@ -6,22 +6,18 @@ const LookerIframe = () => {
   return (
     <Box
       sx={{
-        // display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 2, // Space between elements
-        p: 2, // Padding
         width: "80vw",
-        height: "80vh", // Ensures it doesn't overflow viewport
-        // overflow: "hidden", // Prevents content from spilling outside
+        height: "100vh", // Ensures it doesn't overflow viewport
       }}
     >
       {/* Properly Centered Title */}
       <Typography 
         variant="h4" 
         fontWeight="bold" 
-        sx={{ width: "100%", textAlign: "center", paddingBottom: 3 }} // Ensures proper centering
+        sx={{ textAlign: "center", paddingBottom: 1 }} // Ensures proper centering
       >
         Dashboard
       </Typography>

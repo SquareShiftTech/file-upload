@@ -5,8 +5,6 @@ const Iframe = ({ src }) => {
   return (
     <Box
       sx={{
-        // width: "100vw",
-        height: "100vh",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -14,9 +12,7 @@ const Iframe = ({ src }) => {
       <Paper
         elevation={0}
         sx={{
-          width: "100%",
           height: "100vh",
-          borderRadius: 2,
           overflow: "hidden", // Prevents parent scroll
         }}
       >
@@ -25,8 +21,6 @@ const Iframe = ({ src }) => {
           style={{
             width: "100%",
             height: "100%",
-            border: "none",
-            display: "block",
           }}
           title="Dynamic Iframe"
         ></iframe>
