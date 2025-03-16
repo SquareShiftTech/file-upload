@@ -26,9 +26,13 @@ const Dashboard = () => {
 
   const handleFileChange = (event, type) => {
     if (type === "stock") {
-      setStockFile(event.target.files[0]);
+      setTimeout(() => {
+        setStockFile(event.target.files[0]);
+      }, 1000);
     } else if (type === "sales") {
-      setSalesFile(event.target.files[0]);
+      setTimeout(() => {
+        setSalesFile(event.target.files[0]);
+      }, 1000);
     }
   };
 
@@ -42,7 +46,9 @@ const Dashboard = () => {
 
   const handleStart = () => {
     if (uploadComplete) {
-      setActivePage("analytics");
+      setTimeout(() => {
+        setActivePage("analytics");
+      }, 2000);
     }
   };
 
