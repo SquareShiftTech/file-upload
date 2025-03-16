@@ -1,5 +1,6 @@
 import React from "react";
-import { Modal, Box, Typography, Button } from "@mui/material";
+import { Modal, Box, Button } from "@mui/material";
+import EmailTemplate from "./EmailTemplate";
 
 const DistributerDetailModal = ({ open, onClose, row }) => {
   if (!row) return null;
@@ -13,39 +14,48 @@ const DistributerDetailModal = ({ open, onClose, row }) => {
     >
       <Box
         sx={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          bgcolor: 'background.paper',
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          bgcolor: "background.paper",
           boxShadow: 24,
-          p: 4,
-          width: '400px',
-          borderRadius: '8px',
+          width: "90vw",
+          maxWidth: "900px",
+          height: "90vh",
+          borderRadius: 2,
+          display: "flex",
+          flexDirection: "column",
+          p: 3,
         }}
       >
-        <Typography variant="h6" id="view-modal-title">
-          Distributer Details
-        </Typography>
-        <Typography sx={{ mt: 2 }}>
-          <b>ID:</b> {row.id}
-        </Typography>
-        <Typography sx={{ mt: 1 }}>
-          <b>Name:</b> {row.name}
-        </Typography>
-        <Typography sx={{ mt: 1 }}>
-          <b>Date:</b> {row.date}
-        </Typography>
-        <Typography sx={{ mt: 1 }}>
-          <b>Email:</b> {row.email}
-        </Typography>
-        <Typography sx={{ mt: 1 }}>
-          <b>Status:</b> {row.status}
-        </Typography>
-        <Box mt={2} display="flex" justifyContent="flex-end">
-          <Button onClick={onClose} color="primary">
+        {/* Scrollable Content Wrapper */}
+        <Box
+          sx={{
+            flexGrow: 1,
+            maxHeight: "83vh", // Prevents content from overflowing modal
+            overflowY: "auto", // Enables scrolling if content overflows
+            pr: 1,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          {/* Inner Box to contain EmailTemplate */}
+          <Box sx={{ flexGrow: 1, p: 2, bgcolor: "background.paper", borderRadius: 2 }}>
+            <EmailTemplate />
+          </Box>
+        </Box>
+
+        {/* Close Button */}
+        <Box mt={2} display="flex" justifyContent="center">
+          <Button
+            onClick={onClose}
+            variant="contained"
+            sx={{ backgroundColor: "#12CA95", "&:hover": { backgroundColor: "#0FA37D" } }}
+          >
             Close
           </Button>
+
         </Box>
       </Box>
     </Modal>
