@@ -47,10 +47,7 @@ const EmailTemplate = () => {
       </Box>
       {/* Footer */}
       <Typography variant="body2" color="#555" mt={2}>
-        By following these guidelines, we can ensure a successful launch and
-        maximize sales opportunities. If you have any questions or need
-        additional support, please don’t hesitate to contact your account
-        manager.
+        By following these guidelines, we can ensure a successful launch and maximize sales opportunities. If you have any questions or need additional support, please don’t hesitate to contact your account manager.
       </Typography>
       <br /><br />
       <Typography variant="body1" mt={2}>
@@ -58,7 +55,7 @@ const EmailTemplate = () => {
         <br />
         <strong>Lim & Sons</strong>
         <br />
-        Apple Authorized Distributor
+        Authorized Distributor
       </Typography>
     </Box>
   );
