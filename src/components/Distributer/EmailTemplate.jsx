@@ -40,7 +40,7 @@ const EmailTemplate = () => {
         <ul>
           <li>
             <strong>Forecasted Demand:</strong> Our analysis predicts a{" "}
-            <b>25%</b> increase in sales compared to last year’s launch. Please
+            <b>32%</b> increase in sales compared to Yesterday's Forecast. Please
             adjust your inventory accordingly.
           </li>
         </ul>
